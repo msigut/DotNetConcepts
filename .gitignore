@@ -25,6 +25,9 @@
 *.sln.docstates
 *.priv.json
 
+# data
+*.csv
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
