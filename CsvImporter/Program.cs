@@ -32,8 +32,8 @@ namespace CsvImporter
 			};
 
 			using (var textReader = new StringReader(content))
-			//using (var stringReader = new EscapeToDoubleQuoteReader(textReader))
-			using (var parser = new CsvReader(textReader, configuration))
+			using (var stringReader = new EscapeToDoubleQuoteReader(textReader))
+			using (var parser = new CsvReader(stringReader, configuration))
 			{
 				var res = parser.GetRecords<ImportKusovka>().ToList();
 
